@@ -20,6 +20,8 @@ window.Vue = require('vue');
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default));
 
 Vue.component('vue-clock', require('./components/vue-clock.vue').default);
+Vue.component('vue-clock-v1', require('./components/vue-clock-v1.vue').default);
+Vue.component('vue-clock-v2', require('./components/vue-clock-v2.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

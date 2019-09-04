@@ -1851,6 +1851,132 @@ module.exports = function isBuffer (obj) {
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/vue-clock-v1.vue?vue&type=script&lang=js&":
+/*!***********************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/vue-clock-v1.vue?vue&type=script&lang=js& ***!
+  \***********************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      now: null,
+      second: null,
+      minute: null,
+      hour: null
+    };
+  },
+  created: function created() {
+    var _this = this;
+
+    this.now = new Date();
+    setInterval(function () {
+      return _this.now = new Date();
+    }, 1000);
+  },
+  methods: {
+    cssTransformHands: function cssTransformHands(degrees) {
+      return {
+        transform: "rotate(".concat(degrees, "deg)")
+      };
+    }
+  },
+  computed: {
+    secondHandDegrees: function secondHandDegrees() {
+      this.second = this.now.getSeconds();
+      return this.second / 60 * 360 + 90;
+    },
+    minuteHandDegrees: function minuteHandDegrees() {
+      this.minute = this.now.getMinutes();
+      return this.minute / 60 * 360 + this.second / 60 * 6 + 90;
+    },
+    hourHandDegrees: function hourHandDegrees() {
+      this.hour = this.now.getHours();
+      return this.hour / 12 * 360 + this.minute / 60 * 30 + 90;
+    }
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/vue-clock-v2.vue?vue&type=script&lang=js&":
+/*!***********************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/vue-clock-v2.vue?vue&type=script&lang=js& ***!
+  \***********************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      now: null,
+      second: null,
+      minute: null,
+      hour: null
+    };
+  },
+  created: function created() {
+    var _this = this;
+
+    this.now = new Date();
+    setInterval(function () {
+      return _this.now = new Date();
+    }, 1000);
+  },
+  methods: {
+    cssTransformHands: function cssTransformHands(degrees) {
+      return {
+        transform: "rotate(".concat(degrees, "deg)")
+      };
+    }
+  },
+  computed: {
+    secondHandDegrees: function secondHandDegrees() {
+      this.second = this.now.getSeconds();
+      return this.second / 60 * 360 + 90;
+    },
+    minuteHandDegrees: function minuteHandDegrees() {
+      this.minute = this.now.getMinutes();
+      return this.minute / 60 * 360 + this.second / 60 * 6 + 90;
+    },
+    hourHandDegrees: function hourHandDegrees() {
+      this.hour = this.now.getHours();
+      return this.hour / 12 * 360 + this.minute / 60 * 30 + 90;
+    }
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/vue-clock.vue?vue&type=script&lang=js&":
 /*!********************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/vue-clock.vue?vue&type=script&lang=js& ***!
@@ -6374,7 +6500,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\nhtml {\n    background: url(" + escape(__webpack_require__(/*! ../../images/radial-gradient.png */ "./resources/images/radial-gradient.png")) + ");\n}\n.clock {\n  width: 30rem;\n  height: 30rem;\n  border: 20px solid rgba(0,0,0,0.7);\n  border-radius: 50%;\n  margin: 75px auto;\n  position: relative;\n  padding: 2rem;\n  box-shadow:\n    0 0 0 4px rgba(0,0,0,0.1),\n    inset 0 0 0 3px #EFEFEF,\n    inset 0 0 10px black,\n    0 0 10px rgba(0,0,0,0.2);\n  background: url(" + escape(__webpack_require__(/*! ../../images/salvador-dali-the-persistence-of-memory.jpg */ "./resources/images/salvador-dali-the-persistence-of-memory.jpg")) + ");\n  background-size: cover;\n}\n.clock-face {\n  position: relative;\n  width: 100%;\n  height: 100%;\n  transform: translateY(-3px); /* account for the height of the clock hands */\n}\n.hand {\n  width: 50%;\n  height: 6px;\n  background: white;\n  position: absolute;\n  top: 50%;\n  transform-origin: 100%;\n  transform: rotate(90deg);\n  transition: all 0.05s;\n  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);\n}\n\n", ""]);
+exports.push([module.i, "\nhtml {\n    background: url(" + escape(__webpack_require__(/*! ../../images/radial-gradient.png */ "./resources/images/radial-gradient.png")) + ");\n    background-position: center;\n    background-repeat:no-repeat;\n    background-size: cover;\n}\n.clock {\n  width: 30rem;\n  height: 30rem;\n  border: 20px solid rgba(0,0,0,0.7);\n  border-radius: 50%;\n  margin: 75px auto;\n  position: relative;\n  padding: 2rem;\n  box-shadow:\n    0 0 0 4px rgba(0,0,0,0.1),\n    inset 0 0 0 3px #EFEFEF,\n    inset 0 0 10px black,\n    0 0 10px rgba(0,0,0,0.2);\n  background: url(" + escape(__webpack_require__(/*! ../../images/salvador-dali-the-persistence-of-memory.jpg */ "./resources/images/salvador-dali-the-persistence-of-memory.jpg")) + ");\n  background-size: cover;\n}\n.clock-face {\n  position: relative;\n  width: 100%;\n  height: 100%;\n  transform: translateY(-3px); /* account for the height of the clock hands */\n}\n.hand {\n  width: 50%;\n  height: 6px;\n  background: white;\n  position: absolute;\n  top: 50%;\n  transform-origin: 100%;\n  transform: rotate(90deg);\n  transition: all 0.05s;\n  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);\n}\n\n", ""]);
 
 // exports
 
@@ -37846,6 +37972,92 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/vue-clock-v1.vue?vue&type=template&id=415d904c&class=app&":
+/*!*************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/vue-clock-v1.vue?vue&type=template&id=415d904c&class=app& ***!
+  \*************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "hours" }, [
+    _c("div", { staticClass: "clock" }, [
+      _c("div", { staticClass: "clock-face" }, [
+        _c("div", {
+          staticClass: "hand hour-hand",
+          style: _vm.cssTransformHands(_vm.hourHandDegrees)
+        }),
+        _vm._v(" "),
+        _c("div", {
+          staticClass: "hand min-hand",
+          style: _vm.cssTransformHands(_vm.minuteHandDegrees)
+        }),
+        _vm._v(" "),
+        _c("div", {
+          staticClass: "hand second-hand",
+          style: _vm.cssTransformHands(_vm.secondHandDegrees)
+        })
+      ])
+    ])
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/vue-clock-v2.vue?vue&type=template&id=416ba7cd&class=app&":
+/*!*************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/vue-clock-v2.vue?vue&type=template&id=416ba7cd&class=app& ***!
+  \*************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "hours" }, [
+    _c("div", { staticClass: "clock" }, [
+      _c("div", { staticClass: "clock-face" }, [
+        _c("div", {
+          staticClass: "hand hour-hand",
+          style: _vm.cssTransformHands(_vm.hourHandDegrees)
+        }),
+        _vm._v(" "),
+        _c("div", {
+          staticClass: "hand min-hand",
+          style: _vm.cssTransformHands(_vm.minuteHandDegrees)
+        }),
+        _vm._v(" "),
+        _c("div", {
+          staticClass: "hand second-hand",
+          style: _vm.cssTransformHands(_vm.secondHandDegrees)
+        })
+      ])
+    ])
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/vue-clock.vue?vue&type=template&id=2bccc868&class=app&":
 /*!**********************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/vue-clock.vue?vue&type=template&id=2bccc868&class=app& ***!
@@ -50073,6 +50285,8 @@ window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default));
 
 Vue.component('vue-clock', __webpack_require__(/*! ./components/vue-clock.vue */ "./resources/js/components/vue-clock.vue")["default"]);
+Vue.component('vue-clock-v1', __webpack_require__(/*! ./components/vue-clock-v1.vue */ "./resources/js/components/vue-clock-v1.vue")["default"]);
+Vue.component('vue-clock-v2', __webpack_require__(/*! ./components/vue-clock-v2.vue */ "./resources/js/components/vue-clock-v2.vue")["default"]);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -50127,6 +50341,144 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 //     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
 //     encrypted: true
 // });
+
+/***/ }),
+
+/***/ "./resources/js/components/vue-clock-v1.vue":
+/*!**************************************************!*\
+  !*** ./resources/js/components/vue-clock-v1.vue ***!
+  \**************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _vue_clock_v1_vue_vue_type_template_id_415d904c_class_app___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./vue-clock-v1.vue?vue&type=template&id=415d904c&class=app& */ "./resources/js/components/vue-clock-v1.vue?vue&type=template&id=415d904c&class=app&");
+/* harmony import */ var _vue_clock_v1_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./vue-clock-v1.vue?vue&type=script&lang=js& */ "./resources/js/components/vue-clock-v1.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _vue_clock_v1_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _vue_clock_v1_vue_vue_type_template_id_415d904c_class_app___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _vue_clock_v1_vue_vue_type_template_id_415d904c_class_app___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/vue-clock-v1.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/vue-clock-v1.vue?vue&type=script&lang=js&":
+/*!***************************************************************************!*\
+  !*** ./resources/js/components/vue-clock-v1.vue?vue&type=script&lang=js& ***!
+  \***************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_vue_clock_v1_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./vue-clock-v1.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/vue-clock-v1.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_vue_clock_v1_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/vue-clock-v1.vue?vue&type=template&id=415d904c&class=app&":
+/*!*******************************************************************************************!*\
+  !*** ./resources/js/components/vue-clock-v1.vue?vue&type=template&id=415d904c&class=app& ***!
+  \*******************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_vue_clock_v1_vue_vue_type_template_id_415d904c_class_app___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./vue-clock-v1.vue?vue&type=template&id=415d904c&class=app& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/vue-clock-v1.vue?vue&type=template&id=415d904c&class=app&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_vue_clock_v1_vue_vue_type_template_id_415d904c_class_app___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_vue_clock_v1_vue_vue_type_template_id_415d904c_class_app___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/vue-clock-v2.vue":
+/*!**************************************************!*\
+  !*** ./resources/js/components/vue-clock-v2.vue ***!
+  \**************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _vue_clock_v2_vue_vue_type_template_id_416ba7cd_class_app___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./vue-clock-v2.vue?vue&type=template&id=416ba7cd&class=app& */ "./resources/js/components/vue-clock-v2.vue?vue&type=template&id=416ba7cd&class=app&");
+/* harmony import */ var _vue_clock_v2_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./vue-clock-v2.vue?vue&type=script&lang=js& */ "./resources/js/components/vue-clock-v2.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _vue_clock_v2_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _vue_clock_v2_vue_vue_type_template_id_416ba7cd_class_app___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _vue_clock_v2_vue_vue_type_template_id_416ba7cd_class_app___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/vue-clock-v2.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/vue-clock-v2.vue?vue&type=script&lang=js&":
+/*!***************************************************************************!*\
+  !*** ./resources/js/components/vue-clock-v2.vue?vue&type=script&lang=js& ***!
+  \***************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_vue_clock_v2_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./vue-clock-v2.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/vue-clock-v2.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_vue_clock_v2_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/vue-clock-v2.vue?vue&type=template&id=416ba7cd&class=app&":
+/*!*******************************************************************************************!*\
+  !*** ./resources/js/components/vue-clock-v2.vue?vue&type=template&id=416ba7cd&class=app& ***!
+  \*******************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_vue_clock_v2_vue_vue_type_template_id_416ba7cd_class_app___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./vue-clock-v2.vue?vue&type=template&id=416ba7cd&class=app& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/vue-clock-v2.vue?vue&type=template&id=416ba7cd&class=app&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_vue_clock_v2_vue_vue_type_template_id_416ba7cd_class_app___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_vue_clock_v2_vue_vue_type_template_id_416ba7cd_class_app___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
 
 /***/ }),
 

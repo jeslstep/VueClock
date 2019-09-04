@@ -56,6 +56,10 @@ export default {
 
     html {
         background: url('../../images/radial-gradient.png');
+        background-position: center;
+        background-repeat:no-repeat;
+        background-size: cover;
+     
     }
     .clock {
       width: 30rem;
